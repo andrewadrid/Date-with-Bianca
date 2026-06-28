@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Date cu Bianca?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="hearts-bg" aria-hidden="true"></div>
+
+  <main class="app">
+    <section class="card" id="page-question">
+      <div class="photo">🐶</div>
+      <h1>Iubirea mea Bianca,<br>vrei să ieșim la date împreună? 💖</h1>
+
+      <div class="button-zone" id="buttonZone">
+        <button class="btn yes" id="yesBtn">DA ❤</button>
+        <button class="btn no" id="noBtn">NU 🙈</button>
+      </div>
+
+      <p class="hint" id="noMessage">alege cu inima, nu cu mintea 💕</p>
+    </section>
+
+    <section class="card hidden" id="page-yes">
+      <div class="photo big-emoji">😍</div>
+      <h1>Uauu! Chiar ai spus DA?! 😭</h1>
+      <p>Recunosc, eram pregătit să încerci să apeși pe NU 😅</p>
+      <button class="btn yes wide" id="okayBtn">hai să alegem data →</button>
+    </section>
+
+    <section class="card hidden" id="page-date">
+      <div class="icons">🗓️ 💞</div>
+      <h1>Deci... când ești liberă?</h1>
+
+      <label for="dateInput">Alege o dată ✨</label>
+      <input type="date" id="dateInput" />
+
+      <label for="timeInput">Alege ora ⏰</label>
+      <select id="timeInput">
+        <option value="18:00">18:00 — răspunsul corect, evident</option>
+        <option value="19:00">19:00 — acceptabil și romantic</option>
+        <option value="20:00">20:00 — misterios și cute</option>
+        <option value="Când vrei tu">Când vrei tu, eu sunt liber pentru tine 😭</option>
+      </select>
+
+      <label for="messageInput">Lasă-mi un mesaj cute 💌</label>
+      <textarea id="messageInput" placeholder="Scrie ceva drăguț..."></textarea>
+
+      <button class="btn submit" id="submitBtn">setează date-ul! ❤</button>
+    </section>
+
+    <section class="card hidden" id="page-final">
+      <div class="photo big-emoji">💘</div>
+      <h1>Perfect! Avem date! 💕</h1>
+      <p id="finalText"></p>
+      <p class="small">Fă screenshot și trimite-mi confirmarea 😌</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
